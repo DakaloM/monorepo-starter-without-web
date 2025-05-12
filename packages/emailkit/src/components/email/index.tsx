@@ -1,0 +1,12 @@
+export { EmailBody as Body } from './body';
+export type { EmailBodyProps as BodyProps } from './body';
+export { EmailFooter as Footer } from './footer';
+export type { EmailFooterProps as FooterProps } from './footer';
+export { EmailLayout as Layout } from './layout';
+export type { EmailLayoutProps as LayoutProps } from './layout';
+export { EmailPreview as Preview } from './preview';
+export type { EmailPreviewProps as PreviewProps } from './preview';
+export { EmailRoot as Root } from './root';
+export type { EmailRootProps as RootProps } from './root';
+export { EmailSubtext as Subtext } from './subtext';
+export type { EmailSubtextProps as SubtextProps } from './subtext';

@@ -1,0 +1,33 @@
+{
+  "availability-zones:account=768295153847:region=af-south-1": [
+    "af-south-1a",
+    "af-south-1b",
+    "af-south-1c"
+  ],
+  "availability-zones:account=274742905190:region=af-south-1": [
+    "af-south-1a",
+    "af-south-1b",
+    "af-south-1c"
+  ],
+  "hosted-zone:account=274742905190:domainName=num.technanimals.com:region=af-south-1": {
+    "Id": "/hostedzone/Z01907682ADISFACI69FQ",
+    "Name": "num.technanimals.com."
+  },
+  "hosted-zone:account=768295153847:domainName=num.technanimals.com:region=af-south-1": {
+    "Id": "/hostedzone/Z08878381J8HMI69IAKV3",
+    "Name": "num.technanimals.com."
+  },
+  "availability-zones:account=412395869197:region=af-south-1": [
+    "af-south-1a",
+    "af-south-1b",
+    "af-south-1c"
+  ],
+  "hosted-zone:account=412395869197:domainName=num.technanimals.com:region=af-south-1": {
+    "Id": "/hostedzone/Z045785316SSMFC1XD4DD",
+    "Name": "num.technanimals.com."
+  },
+  "hosted-zone:account=412395869197:domainName=numcms.co.za:region=af-south-1": {
+    "Id": "/hostedzone/Z0828643G3OZUIUO3XZD",
+    "Name": "numcms.co.za."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@num/cache",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./server": {
+      "import": "./dist/server.js",
+      "require": "./dist/server.cjs",
+      "types": "./dist/server.d.ts",
+      "node": "./dist/server.cjs"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint '**/*.ts'",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@num/buildkit": "*",
+    "@num/testkit": "*",
+    "@num/ts": "*",
+    "@num/utils": "*"
+  },
+  "dependencies": {
+    "@redis/client": "~1.5.9"
+  }
+}

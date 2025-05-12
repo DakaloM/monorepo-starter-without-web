@@ -1,0 +1,43 @@
+{
+  "name": "@num/emailkit",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint '**/*.ts*'",
+    "build": "tsup",
+    "test": "vitest",
+    "test:once//": "vitest run"
+  },
+  "dependencies": {
+    "@react-email/components": "0.0.15",
+    "@react-email/render": "0.0.12",
+    "@sendgrid/mail": "~7.7.0",
+    "@vanilla-extract/css": "~1.11.0",
+    "html-to-text": "^8.2.1",
+    "juice": "~9.0.0",
+    "nodemailer": "~6.9.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "twilio": "~4.10.0"
+  },
+  "devDependencies": {
+    "@num/buildkit": "*",
+    "@num/testkit": "*",
+    "@types/html-to-text": "^8.1.1",
+    "@types/nodemailer": "~6.4.7",
+    "@types/react": "~18.2.21",
+    "@types/react-dom": "~18.2.7"
+  }
+}

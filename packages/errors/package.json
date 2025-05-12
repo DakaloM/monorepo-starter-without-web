@@ -1,0 +1,20 @@
+{
+  "name": "@num/errors",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint '**/*.ts'",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@num/buildkit": "*",
+    "@num/ts": "*"
+  },
+  "dependencies": {
+    "tsup": "^8.4.0"
+  }
+}

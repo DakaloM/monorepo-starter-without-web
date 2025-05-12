@@ -1,0 +1,33 @@
+{
+  "name": "@num/infrakit",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint '**/*.ts'",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@num/buildkit": "*",
+    "@num/ts": "*"
+  },
+  "peerDependencies": {
+    "aws-cdk-lib": ">=2.95.1",
+    "constructs": ">=10.2.69",
+    "sst": ">=2.26.9"
+  },
+  "dependencies": {
+    "tsup": "^8.4.0"
+  }
+}

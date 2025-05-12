@@ -1,0 +1,16 @@
+name: "Determine build graph"
+description: "Analyzes the changed files and determines what apps/packages have changed"
+
+inputs:
+  ref:
+    description: "The ref to use for change detection"
+    required: true
+
+# outputs:
+#   should_run:
+#     description: "Boolean flag if an app/package has changed"
+#     value: "false"
+
+runs:
+  using: "node16"
+  main: "index.js"

@@ -1,0 +1,40 @@
+name: "Deploy with HQ"
+description: "Deploys a set of services via HQ."
+
+inputs:
+  endpoint:
+    description: "The URL where HQ is available"
+    required: true
+    default: "string"
+  version:
+    description: "The Docker image tag to deploy"
+    required: true
+    default: "string"
+  apps:
+    description: "Application changed"
+    required: true
+    default: "string"
+  installation:
+    description: "The tag of the installations to deploy to"
+    required: true
+    default: "string"
+  clientId:
+    description: "The ID of the client to acquire a token"
+    required: true
+    default: "string"
+  clientSecret:
+    description: "The secret of the client to acquire a token"
+    required: true
+    default: "string"
+  username:
+    description: "The username to acquire a token"
+    required: true
+    default: "string"
+  password:
+    description: "The password to acquire a token"
+    required: true
+    default: "string"
+
+runs:
+  using: "node16"
+  main: "index.js"

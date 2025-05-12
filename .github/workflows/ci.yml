@@ -1,0 +1,86 @@
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches: [main, test]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CI: true
+  NODE_OPTIONS: '--max-old-space-size=4096'
+
+jobs:
+  validate-and-build:
+    name: Validate & Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      db:
+        image: postgres:15.4-alpine3.18
+        ports: ['5437:5432']
+        env:
+          POSTGRES_USER: num
+          POSTGRES_PASSWORD: num
+          POSTGRES_DB: num_test
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      mail:
+        image: axllent/mailpit:latest
+        ports:
+          - '1025:1025'
+          - '8025:8025'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          cache: 'yarn'
+          cache-dependency-path: yarn.lock
+          node-version: '18.x'
+
+      - name: Restore build cache
+        id: turbo-cache
+        uses: actions/cache@v3
+        with:
+          path: .turbo
+          key: turbo-${{ github.ref_name }}-${{ github.sha }}
+          restore-keys: |
+            turbo-${{ github.ref_name }}-
+
+      - name: Install dependencies
+        run: |
+          npm install -g yarn
+          yarn
+
+      # - name: Determine build graph
+      #   id: graph
+      #   uses: ./.github/actions/determine-build-graph
+      #   with:
+      #     ref: ${{ github.ref == 'refs/heads/next' && 'HEAD^1' || 'origin/next' }}
+
+      - name: Build
+        # if: steps.graph.outputs.has-affected-projects == 'true'
+        run:
+          yarn run build
+          # ${{ github.event.inputs.additionalBuildFlags }}
+
+      - name: Lint
+        # if: steps.graph.outputs.has-affected-projects == 'true'
+        run: |
+          yarn run lint
+
+      - name: Test (unit)
+        # if: steps.graph.outputs.has-affected-projects == 'true'
+        timeout-minutes: 10
+        run: |
+          yarn run test:ci

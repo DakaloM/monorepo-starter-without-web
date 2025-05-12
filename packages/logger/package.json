@@ -1,0 +1,30 @@
+{
+  "name": "@num/logger",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint '**/*.ts'",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "@num/buildkit": "*",
+    "@num/ts": "*"
+  },
+  "dependencies": {
+    "pino": "~8.11.0",
+    "pino-pretty": "~9.4.0",
+    "tsup": "^8.4.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "@num/ts/base.json",
+  "include": ["."],
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": ".",
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "~*": ["src/*"]
+    }
+  },
+  "exclude": ["dist", "build", "node_modules"]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@num/eslint-plugin",
+  "version": "0.0.0",
+  "main": "index.cjs",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "eslint '**/*.cjs'"
+  },
+  "dependencies": {
+    "eslint": "~8.48.0",
+    "eslint-config-next": "13.4.9",
+    "eslint-config-prettier": "~9.0.0",
+    "eslint-config-turbo": "~1.10.13",
+    "eslint-plugin-react": "~7.33.2"
+  },
+  "devDependencies": {
+    "next": "13.4.9"
+  }
+}

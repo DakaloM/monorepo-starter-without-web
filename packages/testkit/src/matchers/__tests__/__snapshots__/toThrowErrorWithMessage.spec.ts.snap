@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test/matchers/toThrowErrorWithMessage > fails on non matching errors > Expected an error of type "BadRequestError" with message: 1`] = `"ExtendedError is not defined"`;

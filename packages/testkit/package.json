@@ -1,0 +1,39 @@
+{
+  "name": "@num/testkit",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint '**/*.ts'",
+    "test": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@faker-js/faker": "~8.0.2",
+    "@num/utils": "*",
+    "@vitest/coverage-v8": "~0.34.3",
+    "vite-tsconfig-paths": "~4.2.0",
+    "vitest": "~0.34.3"
+  },
+  "devDependencies": {
+    "@num/buildkit": "*",
+    "@num/ts": "*",
+    "knex": "~2.5.1",
+    "pg": "~8.11.3"
+  },
+  "peerDependencies": {
+    "knex": ">=2.5.1",
+    "pg": ">=8.11.3"
+  }
+}

@@ -1,0 +1,17 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./apps/api/Dockerfile
+    restart: always
+    environment:
+      - DATABASE_URL=postgresql://num:num@db:5432/num_dev
+      - STAGE=dev
+      - MAIL_HOST=mail
+      - MAIL_PORT=1026
+
+    ports:
+      - 8080:8080
+    links:
+      - db
+      - mail

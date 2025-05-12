@@ -1,0 +1,58 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "env": "AWS_PROFILE=ndt yarn command env",
+    "dev": "turbo run dev --concurrency=20",
+    "test:once": "turbo run test:once",
+    "test:ci": "turbo run test:ci",
+    "command": "ts-node --esm -r tsconfig-paths/register scripts/index.mts",
+    "lint": "turbo run lint",
+    "deploy": "sst deploy --stage $STAGE",
+    "deploy:test": "sst deploy --stage test --profile num",
+    "deploy:uat": "sst deploy --stage uat --profile num",
+    "deploy:prod": "sst deploy --stage prod --profile num",
+    "undeploy": "sst remove --stage $STAGE",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "postinstall": "patch-package",
+    "client": "yarn build --filter=client",
+    "schema": "rover graph introspect http://localhost:8080/graphql -o  packages/client/schema.graphql"
+  },
+  "dependencies": {
+    "@num/infrakit": "*",
+    "dotenv": "~16.3.1",
+    "lodash": "~4.17.21",
+    "patch-package": "~8.0.0",
+    "tsup": "^8.4.0"
+  },
+  "devDependencies": {
+    "@actions/core": "~1.10.0",
+    "@actions/exec": "~1.1.1",
+    "@actions/glob": "~0.4.0",
+    "@actions/http-client": "~2.1.1",
+    "@aws-sdk/client-ec2": "~3.409.0",
+    "@aws-sdk/client-secrets-manager": "~3.409.0",
+    "@aws-sdk/client-ssm": "~3.409.0",
+    "@aws-sdk/credential-providers": "~3.409.0",
+    "@trivago/prettier-plugin-sort-imports": "~4.2.0",
+    "@tsconfig/node18": "^18.2.1",
+    "@turbo/gen": "~1.9.7",
+    "@types/lodash": "~4.14.198",
+    "aws-cdk-lib": "2.95.1",
+    "constructs": "10.2.69",
+    "prettier": "~3.0.2",
+    "sst": "2.26.9",
+    "turbo": "~1.10.3",
+    "typescript": "^5.2.2"
+  },
+  "name": "num",
+  "packageManager": "yarn@4.3.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "volta": {
+    "node": "18.17.1",
+    "yarn": "1.22.19"
+  }
+}
