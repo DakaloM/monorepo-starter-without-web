@@ -1,5 +1,4 @@
-import { getSecret } from '@num/infrakit';
-
+import { getSecret } from '@repo/infrakit';
 import { use, StackContext, NextjsSite } from 'sst/constructs';
 
 import { Api } from './api';

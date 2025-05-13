@@ -1,6 +1,5 @@
-import { ExpiresInSeconds } from '@num/cache';
-
 import { gql as baseGql } from '@apollo/client';
+import { ExpiresInSeconds } from '@repo/cache';
 import { has } from 'lodash';
 import { agent } from 'supertest';
 import type { Variables } from 'supertest-graphql';

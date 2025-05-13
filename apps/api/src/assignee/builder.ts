@@ -1,5 +1,5 @@
-import { createBuilder, createSeed } from '@num/datakit';
-import { createObjectMap } from '@num/utils';
+import { createBuilder, createSeed } from '@repo/datakit';
+import { createObjectMap } from '@repo/utils';
 
 import { Assignee } from './assignee';
 import { Role } from './role';

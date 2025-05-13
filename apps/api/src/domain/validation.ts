@@ -1,6 +1,5 @@
-import { BadRequestError, ValidationErrorCodes } from '@num/serverkit';
-import type { BadRequestErrorIssue } from '@num/serverkit';
-
+import { BadRequestError, ValidationErrorCodes } from '@repo/serverkit';
+import type { BadRequestErrorIssue } from '@repo/serverkit';
 import { z } from 'zod';
 import { extensions } from '~/documents/contentTypes';
 

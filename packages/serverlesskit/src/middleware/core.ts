@@ -1,8 +1,7 @@
-import { Cache } from '@num/cache';
-
 import middy, { MiddyfiedHandler } from '@middy/core';
 import cors from '@middy/http-cors';
 import jsonBodyParser from '@middy/http-json-body-parser';
+import { Cache } from '@repo/cache';
 import { APIGatewayProxyEventV2 } from 'aws-lambda';
 import z, { AnyZodObject } from 'zod';
 

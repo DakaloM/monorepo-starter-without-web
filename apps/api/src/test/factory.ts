@@ -1,5 +1,4 @@
-import { Factory as BaseFactory, createFactory as createBaseFactory } from '@num/datakit';
-
+import { Factory as BaseFactory, createFactory as createBaseFactory } from '@repo/datakit';
 import { userBuilder } from '~/account/builder';
 import { assigneeBuilder, roleSeeds } from '~/assignee/builder';
 import { clientBuilder } from '~/auth/builder';

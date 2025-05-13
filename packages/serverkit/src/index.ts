@@ -1,7 +1,7 @@
 export { initConfig } from './config';
-export { createLogger } from '@num/logger';
+export { createLogger } from '@repo/logger';
 
-export type { Logger, LoggerLevel, LoggerOptions } from '@num/logger';
+export type { Logger, LoggerLevel, LoggerOptions } from '@repo/logger';
 export { Validator } from './validator';
 
 export {
@@ -16,9 +16,9 @@ export {
   ValidationErrorCodes,
   isError,
   isUserError,
-} from '@num/errors';
+} from '@repo/errors';
 
-export type { BadRequestErrorIssue } from '@num/errors';
+export type { BadRequestErrorIssue } from '@repo/errors';
 
 export * from './env';
 

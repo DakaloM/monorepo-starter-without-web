@@ -1,5 +1,5 @@
 {
-  "name": "@num/testkit",
+  "name": "@repo/testkit",
   "version": "0.0.0",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -21,15 +21,15 @@
   },
   "dependencies": {
     "@faker-js/faker": "~8.0.2",
-    "@num/utils": "*",
+    "@repo/utils": "*",
     "@vitest/coverage-v8": "~0.34.3",
     "eslint": "^8",
     "vite-tsconfig-paths": "~4.2.0",
     "vitest": "~0.34.3"
   },
   "devDependencies": {
-    "@num/buildkit": "*",
-    "@num/ts": "*",
+    "@repo/buildkit": "*",
+    "@repo/ts": "*",
     "knex": "~2.5.1",
     "pg": "~8.11.3"
   },

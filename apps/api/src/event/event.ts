@@ -1,5 +1,4 @@
-import { BaseModel } from '@num/datakit';
-
+import { BaseModel } from '@repo/datakit';
 import { User } from '~/account/user';
 import { Assignee } from '~/assignee';
 import { TypeIdentifier } from '~/type/type';

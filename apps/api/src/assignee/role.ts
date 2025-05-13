@@ -1,4 +1,4 @@
-import { BaseModel } from '@num/datakit';
+import { BaseModel } from '@repo/datakit';
 
 export enum RoleIdentifier {
   Assignee = 'Assignee',

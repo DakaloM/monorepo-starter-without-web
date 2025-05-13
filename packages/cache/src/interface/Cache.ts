@@ -1,4 +1,4 @@
-import { PromiseOfOptional } from '@num/utils';
+import { PromiseOfOptional } from '@repo/utils';
 
 export interface Cache {
   set(key: string, value: string, expiresIn?: TimeToLive): Promise<void>;

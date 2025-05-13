@@ -1,6 +1,5 @@
-import { createBuilder } from '@num/datakit';
-import { faker } from '@num/testkit';
-
+import { createBuilder } from '@repo/datakit';
+import { faker } from '@repo/testkit';
 import * as argon2 from 'argon2';
 import 'argon2';
 import { Client, ClientScope } from '~/auth/client';

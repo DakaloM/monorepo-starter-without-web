@@ -1,5 +1,5 @@
 {
-  "name": "@num/serverlesskit",
+  "name": "@repo/serverlesskit",
   "version": "0.0.0",
   "private": true,
   "main": "./dist/index.cjs",
@@ -18,9 +18,9 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "@num/buildkit": "*",
-    "@num/testkit": "*",
-    "@num/ts": "*",
+    "@repo/buildkit": "*",
+    "@repo/testkit": "*",
+    "@repo/ts": "*",
     "@types/aws-lambda": "~8.10.124",
     "eslint": "^8"
   },
@@ -29,8 +29,8 @@
     "@middy/http-cors": "~4.4.3",
     "@middy/http-error-handler": "~4.4.3",
     "@middy/http-json-body-parser": "~4.4.3",
-    "@num/cache": "*",
-    "@num/errors": "*",
+    "@repo/cache": "*",
+    "@repo/errors": "*",
     "aws-lambda": "~1.0.7",
     "zod": "~3.22.4"
   }

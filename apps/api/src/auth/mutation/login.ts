@@ -1,5 +1,4 @@
-import { ForbiddenError } from '@num/serverkit';
-
+import { ForbiddenError } from '@repo/serverkit';
 import * as argon from 'argon2';
 import { User } from '~/account';
 import { Context } from '~/context';

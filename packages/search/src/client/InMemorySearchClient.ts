@@ -1,5 +1,4 @@
-import { GetObjectPath, getArray } from '@num/utils';
-
+import { GetObjectPath, getArray } from '@repo/utils';
 import Fuse from 'fuse.js';
 import { SearchClient, SearchFilter, SearchItem } from '~/interface/SearchClient';
 

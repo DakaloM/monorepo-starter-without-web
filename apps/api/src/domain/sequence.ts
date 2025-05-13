@@ -1,5 +1,4 @@
-import { NotFoundError } from '@num/serverkit';
-
+import { NotFoundError } from '@repo/serverkit';
 import { Knex } from 'knex';
 import { camelCase, uniq } from 'lodash';
 import { Context } from '~/context';

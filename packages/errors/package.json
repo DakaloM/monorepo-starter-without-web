@@ -1,5 +1,5 @@
 {
-  "name": "@num/errors",
+  "name": "@repo/errors",
   "version": "0.0.0",
   "private": true,
   "main": "dist/index.js",
@@ -11,8 +11,8 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "@num/buildkit": "*",
-    "@num/ts": "*",
+    "@repo/buildkit": "*",
+    "@repo/ts": "*",
     "eslint": "^8"
   },
   "dependencies": {

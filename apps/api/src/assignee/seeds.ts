@@ -1,4 +1,4 @@
-import { startCase } from '@num/utils';
+import { startCase } from '@repo/utils';
 
 import { RoleIdentifier } from './role';
 

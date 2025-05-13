@@ -1,5 +1,5 @@
 {
-  "name": "@num/search",
+  "name": "@repo/search",
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
@@ -27,9 +27,9 @@
     "meilisearch": "~0.34.1"
   },
   "devDependencies": {
-    "@num/buildkit": "*",
-    "@num/testkit": "*",
-    "@num/utils": "*",
+    "@repo/buildkit": "*",
+    "@repo/testkit": "*",
+    "@repo/utils": "*",
     "env-var": "~7.3.1",
     "eslint": "^8",
     "next": "13.4.9"

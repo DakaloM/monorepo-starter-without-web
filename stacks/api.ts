@@ -1,10 +1,9 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { getSecret } from '@num/infrakit';
-
 import {
   HttpLambdaAuthorizer,
   HttpLambdaResponseType,
 } from '@aws-cdk/aws-apigatewayv2-authorizers-alpha';
+import { getSecret } from '@repo/infrakit';
 import { Duration } from 'aws-cdk-lib';
 import {
   Api as ApiGateway,

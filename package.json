@@ -22,7 +22,7 @@
     "schema": "rover graph introspect http://localhost:8080/graphql -o  packages/client/schema.graphql"
   },
   "dependencies": {
-    "@num/infrakit": "*",
+    "@repo/infrakit": "*",
     "dotenv": "~16.3.1",
     "eslint-plugin-turbo": "^2.5.3",
     "lodash": "~4.17.21",

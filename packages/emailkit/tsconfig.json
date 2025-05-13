@@ -1,5 +1,5 @@
 {
-  "extends": "@num/ts/base.json",
+  "extends": "@repo/ts/base.json",
   "include": ["."],
   "compilerOptions": {
     "outDir": "dist",

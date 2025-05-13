@@ -1,4 +1,4 @@
-import { createLogger, Logger as BaseLogger } from '@num/serverkit';
+import { createLogger, Logger as BaseLogger } from '@repo/serverkit';
 
 import { config } from './config';
 

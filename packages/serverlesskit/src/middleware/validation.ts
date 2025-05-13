@@ -1,6 +1,5 @@
-import { BadRequestError } from '@num/errors';
-
 import middy, { MiddlewareObj } from '@middy/core';
+import { BadRequestError } from '@repo/errors';
 import z from 'zod';
 
 import { APIGatewayEventV2, Handler } from './core';

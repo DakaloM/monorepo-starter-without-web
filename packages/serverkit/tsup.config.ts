@@ -1,3 +1,3 @@
-import { options, defineConfig } from '@num/buildkit';
+import { options, defineConfig } from '@repo/buildkit';
 
 export default defineConfig(options);

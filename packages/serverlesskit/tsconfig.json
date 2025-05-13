@@ -1,5 +1,5 @@
 {
-  "extends": "@num/ts/base",
+  "extends": "@repo/ts/base",
   "compilerOptions": {
     "outDir": "dist",
     "baseUrl": ".",

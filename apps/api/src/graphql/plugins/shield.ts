@@ -1,5 +1,3 @@
-import { ForbiddenError } from '@num/serverkit';
-
 import SchemaBuilder, {
   BasePlugin,
   BuildCache,
@@ -9,6 +7,7 @@ import SchemaBuilder, {
   TypeParam,
 } from '@pothos/core';
 import { PothosWithInputPlugin } from '@pothos/plugin-with-input';
+import { ForbiddenError } from '@repo/serverkit';
 import { GraphQLSchema, isObjectType } from 'graphql';
 import { applyMiddleware } from 'graphql-middleware';
 import { IRules, deny, shield } from 'graphql-shield';

@@ -1,5 +1,4 @@
-import type { Logger } from '@num/logger';
-
+import type { Logger } from '@repo/logger';
 import type { Knex as KnexTypes } from 'knex';
 import Knex from 'knex';
 import pg from 'pg';

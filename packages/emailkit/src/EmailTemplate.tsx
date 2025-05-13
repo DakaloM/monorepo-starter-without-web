@@ -40,7 +40,7 @@ const links = {
 const info = {
   address: '123 Main street, Cityville, State 56789',
   phone: '(+27) 123-4567',
-  email: 'info@num.com',
+  email: 'info@repo.com',
   website: 'www.num.com',
 };
 

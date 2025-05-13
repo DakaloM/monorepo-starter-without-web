@@ -1,5 +1,4 @@
-import { PromiseOfOptional } from '@num/utils';
-
+import { PromiseOfOptional } from '@repo/utils';
 import { Cache } from '~/interface';
 
 export class InMemoryCache implements Cache {

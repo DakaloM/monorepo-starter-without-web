@@ -6,7 +6,7 @@ module.exports = {
   semi: true,
   importOrder: [
     '^@gen/(.*)$',
-    '^@num/(.*)$',
+    '^@repo/(.*)$',
     '~/graphql/builder',
     '<THIRD_PARTY_MODULES>',
     '^[./]',

@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['plugin:@num/base'],
+  extends: ['plugin:@repo/base'],
   settings: {
     next: {
       rootDir: ['apps/*/'],

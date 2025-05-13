@@ -1,5 +1,4 @@
-import { BaseModel } from '@num/datakit';
-
+import { BaseModel } from '@repo/datakit';
 import mime from 'mime-types';
 import path from 'path';
 import { User } from '~/account/user';

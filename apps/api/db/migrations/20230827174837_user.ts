@@ -3,11 +3,8 @@ import { Knex } from 'knex';
 export async function up(knex: Knex): Promise<void> {
   await knex.schema.createTable('user', (t) => {
     t.uuid('id').primary().defaultTo(knex.raw('generate_ulid()'));
-
-    t.uuid('tenant_id').references('id').inTable('tenant').notNullable();
     t.string('name').notNullable();
     t.string('sort_name').notNullable();
-
     t.increments('sequence').notNullable().unique();
     t.string('surname').notNullable();
     t.string('title').notNullable();

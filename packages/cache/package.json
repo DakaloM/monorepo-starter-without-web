@@ -1,5 +1,5 @@
 {
-  "name": "@num/cache",
+  "name": "@repo/cache",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -25,10 +25,10 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "@num/buildkit": "*",
-    "@num/testkit": "*",
-    "@num/ts": "*",
-    "@num/utils": "*",
+    "@repo/buildkit": "*",
+    "@repo/testkit": "*",
+    "@repo/ts": "*",
+    "@repo/utils": "*",
     "eslint": "^8"
   },
   "dependencies": {

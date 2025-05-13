@@ -1,5 +1,4 @@
-import { createLogger } from '@num/logger';
-
+import { createLogger } from '@repo/logger';
 import assert from 'assert';
 import { Knex } from 'knex';
 import { v4 as uuid } from 'uuid';

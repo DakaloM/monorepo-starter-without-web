@@ -1,5 +1,5 @@
 {
-  "name": "@num/buildkit",
+  "name": "@repo/buildkit",
   "version": "0.0.0",
   "type": "module",
   "main": "./dist/index.cjs",

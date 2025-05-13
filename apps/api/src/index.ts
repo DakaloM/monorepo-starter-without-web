@@ -1,4 +1,4 @@
-import { RedisCache } from '@num/cache/server';
+import { RedisCache } from '@repo/cache/server';
 
 import { config } from './config';
 import './express';

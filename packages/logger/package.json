@@ -1,5 +1,5 @@
 {
-  "name": "@num/logger",
+  "name": "@repo/logger",
   "version": "0.0.0",
   "private": true,
   "main": "./dist/index.cjs",
@@ -19,8 +19,8 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "@num/buildkit": "*",
-    "@num/ts": "*",
+    "@repo/buildkit": "*",
+    "@repo/ts": "*",
     "eslint": "^8"
   },
   "dependencies": {

@@ -1,5 +1,4 @@
-import { NotFoundError } from '@num/serverkit';
-
+import { NotFoundError } from '@repo/serverkit';
 import { User, UserRole } from '~/account/user';
 import { Context } from '~/context';
 

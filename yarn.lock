@@ -4803,259 +4803,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@num/buildkit@npm:*, @num/buildkit@workspace:packages/buildkit":
-  version: 0.0.0-use.local
-  resolution: "@num/buildkit@workspace:packages/buildkit"
-  dependencies:
-    "@types/dotenv": "npm:~8.2.0"
-    "@vitest/coverage-v8": "npm:~0.34.2"
-    dotenv: "npm:~16.3.1"
-    env-var: "npm:~7.3.1"
-    esbuild: "npm:~0.18.20"
-    eslint: "npm:^8"
-    tsup: "npm:~7.2.0"
-    typescript: "npm:~5.1.6"
-    vite-tsconfig-paths: "npm:~4.2.0"
-  bin:
-    buildkit: ./bin/buildkit.js
-  languageName: unknown
-  linkType: soft
-
-"@num/cache@npm:*, @num/cache@workspace:packages/cache":
-  version: 0.0.0-use.local
-  resolution: "@num/cache@workspace:packages/cache"
-  dependencies:
-    "@num/buildkit": "npm:*"
-    "@num/testkit": "npm:*"
-    "@num/ts": "npm:*"
-    "@num/utils": "npm:*"
-    "@redis/client": "npm:~1.5.9"
-    eslint: "npm:^8"
-  languageName: unknown
-  linkType: soft
-
-"@num/datakit@npm:*, @num/datakit@workspace:packages/datakit":
-  version: 0.0.0-use.local
-  resolution: "@num/datakit@workspace:packages/datakit"
-  dependencies:
-    "@num/buildkit": "npm:*"
-    "@num/logger": "npm:*"
-    "@types/pg": "npm:~8.10.2"
-    "@types/uuid": "npm:~9.0.2"
-    db-errors: "npm:~0.2.3"
-    eslint: "npm:^8"
-    knex: "npm:~2.5.1"
-    objection: "npm:~3.1.1"
-    pg: "npm:~8.11.3"
-    tsup: "npm:^8.4.0"
-    uuid: "npm:~9.0.0"
-  peerDependencies:
-    "@num/logger": "*"
-    knex: ">=2.5.1"
-    objection: ">=3.1.1"
-    pg: ">=8.11.3"
-  bin:
-    buildkit: ./bin/buildkit.js
-  languageName: unknown
-  linkType: soft
-
-"@num/emailkit@npm:*, @num/emailkit@workspace:packages/emailkit":
-  version: 0.0.0-use.local
-  resolution: "@num/emailkit@workspace:packages/emailkit"
-  dependencies:
-    "@num/buildkit": "npm:*"
-    "@num/testkit": "npm:*"
-    "@react-email/components": "npm:0.0.15"
-    "@react-email/render": "npm:0.0.12"
-    "@sendgrid/mail": "npm:~7.7.0"
-    "@types/html-to-text": "npm:^8.1.1"
-    "@types/nodemailer": "npm:~6.4.7"
-    "@types/react": "npm:~18.2.21"
-    "@types/react-dom": "npm:~18.2.7"
-    "@vanilla-extract/css": "npm:~1.11.0"
-    eslint: "npm:^8"
-    html-to-text: "npm:^8.2.1"
-    juice: "npm:~9.0.0"
-    nodemailer: "npm:~6.9.1"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
-    twilio: "npm:~4.10.0"
-  languageName: unknown
-  linkType: soft
-
-"@num/errors@npm:*, @num/errors@workspace:packages/errors":
-  version: 0.0.0-use.local
-  resolution: "@num/errors@workspace:packages/errors"
-  dependencies:
-    "@num/buildkit": "npm:*"
-    "@num/ts": "npm:*"
-    eslint: "npm:^8"
-    tsup: "npm:^8.4.0"
-  languageName: unknown
-  linkType: soft
-
-"@num/eslint-plugin@workspace:packages/lint":
-  version: 0.0.0-use.local
-  resolution: "@num/eslint-plugin@workspace:packages/lint"
-  dependencies:
-    eslint: "npm:^8"
-    eslint-config-airbnb-typescript: "npm:~18.0.0"
-    eslint-config-next: "npm:~14.2.5"
-    eslint-config-prettier: "npm:~9.1.0"
-    eslint-config-turbo: "npm:~2.0.6"
-    eslint-config-universe: "npm:~13.0.0"
-    eslint-import-resolver-typescript: "npm:~3.6.1"
-    eslint-plugin-import: "npm:~2.29.1"
-    eslint-plugin-jsdoc: "npm:~48.8.3"
-    eslint-plugin-jsx-a11y: "npm:~6.9.0"
-    eslint-plugin-prettier: "npm:~5.2.1"
-    eslint-plugin-react: "npm:~7.34.3"
-    next: "npm:^15"
-  languageName: unknown
-  linkType: soft
-
-"@num/infrakit@npm:*, @num/infrakit@workspace:packages/infrakit":
-  version: 0.0.0-use.local
-  resolution: "@num/infrakit@workspace:packages/infrakit"
-  dependencies:
-    "@num/buildkit": "npm:*"
-    "@num/ts": "npm:*"
-    eslint: "npm:^8"
-    tsup: "npm:^8.4.0"
-  peerDependencies:
-    aws-cdk-lib: ">=2.95.1"
-    constructs: ">=10.2.69"
-    sst: ">=2.26.9"
-  languageName: unknown
-  linkType: soft
-
-"@num/logger@npm:*, @num/logger@workspace:packages/logger":
-  version: 0.0.0-use.local
-  resolution: "@num/logger@workspace:packages/logger"
-  dependencies:
-    "@num/buildkit": "npm:*"
-    "@num/ts": "npm:*"
-    eslint: "npm:^8"
-    pino: "npm:~8.11.0"
-    pino-pretty: "npm:~9.4.0"
-    tsup: "npm:^8.4.0"
-  languageName: unknown
-  linkType: soft
-
-"@num/search@workspace:packages/search":
-  version: 0.0.0-use.local
-  resolution: "@num/search@workspace:packages/search"
-  dependencies:
-    "@num/buildkit": "npm:*"
-    "@num/testkit": "npm:*"
-    "@num/utils": "npm:*"
-    algoliasearch: "npm:~4.19.1"
-    env-var: "npm:~7.3.1"
-    eslint: "npm:^8"
-    fuse.js: "npm:~6.6.2"
-    meilisearch: "npm:~0.34.1"
-    next: "npm:13.4.9"
-  languageName: unknown
-  linkType: soft
-
-"@num/serverkit@npm:*, @num/serverkit@workspace:packages/serverkit":
-  version: 0.0.0-use.local
-  resolution: "@num/serverkit@workspace:packages/serverkit"
-  dependencies:
-    "@num/buildkit": "npm:*"
-    "@num/errors": "npm:*"
-    "@num/logger": "npm:*"
-    "@num/testkit": "npm:*"
-    "@num/ts": "npm:*"
-    "@types/dotenv": "npm:~8.2.0"
-    dotenv: "npm:~16.3.1"
-    env-var: "npm:~7.3.1"
-    eslint: "npm:^8"
-    pino: "npm:~8.11.0"
-    pino-pretty: "npm:~9.4.0"
-    zod: "npm:~3.22.4"
-  languageName: unknown
-  linkType: soft
-
-"@num/serverlesskit@npm:*, @num/serverlesskit@workspace:packages/serverlesskit":
-  version: 0.0.0-use.local
-  resolution: "@num/serverlesskit@workspace:packages/serverlesskit"
-  dependencies:
-    "@middy/core": "npm:~4.4.3"
-    "@middy/http-cors": "npm:~4.4.3"
-    "@middy/http-error-handler": "npm:~4.4.3"
-    "@middy/http-json-body-parser": "npm:~4.4.3"
-    "@num/buildkit": "npm:*"
-    "@num/cache": "npm:*"
-    "@num/errors": "npm:*"
-    "@num/testkit": "npm:*"
-    "@num/ts": "npm:*"
-    "@types/aws-lambda": "npm:~8.10.124"
-    aws-lambda: "npm:~1.0.7"
-    eslint: "npm:^8"
-    zod: "npm:~3.22.4"
-  languageName: unknown
-  linkType: soft
-
-"@num/storage@npm:*, @num/storage@workspace:packages/storage":
-  version: 0.0.0-use.local
-  resolution: "@num/storage@workspace:packages/storage"
-  dependencies:
-    "@aws-sdk/client-s3": "npm:~3.414.0"
-    "@aws-sdk/s3-presigned-post": "npm:~3.414.0"
-    "@aws-sdk/s3-request-presigner": "npm:~3.414.0"
-    "@num/buildkit": "npm:*"
-    "@num/testkit": "npm:*"
-    "@num/ts": "npm:*"
-    "@num/utils": "npm:*"
-    eslint: "npm:^8"
-  languageName: unknown
-  linkType: soft
-
-"@num/testkit@npm:*, @num/testkit@workspace:packages/testkit":
-  version: 0.0.0-use.local
-  resolution: "@num/testkit@workspace:packages/testkit"
-  dependencies:
-    "@faker-js/faker": "npm:~8.0.2"
-    "@num/buildkit": "npm:*"
-    "@num/ts": "npm:*"
-    "@num/utils": "npm:*"
-    "@vitest/coverage-v8": "npm:~0.34.3"
-    eslint: "npm:^8"
-    knex: "npm:~2.5.1"
-    pg: "npm:~8.11.3"
-    vite-tsconfig-paths: "npm:~4.2.0"
-    vitest: "npm:~0.34.3"
-  peerDependencies:
-    knex: ">=2.5.1"
-    pg: ">=8.11.3"
-  languageName: unknown
-  linkType: soft
-
-"@num/ts@npm:*, @num/ts@workspace:packages/ts":
-  version: 0.0.0-use.local
-  resolution: "@num/ts@workspace:packages/ts"
-  dependencies:
-    vitest: "npm:~0.34.3"
-  languageName: unknown
-  linkType: soft
-
-"@num/utils@npm:*, @num/utils@workspace:packages/utils":
-  version: 0.0.0-use.local
-  resolution: "@num/utils@workspace:packages/utils"
-  dependencies:
-    "@num/buildkit": "npm:*"
-    "@types/lodash.groupby": "npm:~4.6.7"
-    "@types/lodash.startcase": "npm:~4.4.7"
-    csvtojson: "npm:^2.0.10"
-    date-fns: "npm:~2.30.0"
-    eslint: "npm:^8"
-    lodash.groupby: "npm:~4.6.0"
-    lodash.startcase: "npm:~4.4.0"
-    tsup: "npm:^8.4.0"
-  languageName: unknown
-  linkType: soft
-
 "@one-ini/wasm@npm:0.1.1":
   version: 0.1.1
   resolution: "@one-ini/wasm@npm:0.1.1"
@@ -5485,6 +5232,259 @@ __metadata:
   checksum: 10c0/9a2928d70f2be4a8f72857f8f7553810015ac970f174b4b20f07289644379af57fa68947601d67e557c1a7c33ddf805e787cf2a1d5e9037ba485d24075a81b6b
   languageName: node
   linkType: hard
+
+"@repo/buildkit@npm:*, @repo/buildkit@workspace:packages/buildkit":
+  version: 0.0.0-use.local
+  resolution: "@repo/buildkit@workspace:packages/buildkit"
+  dependencies:
+    "@types/dotenv": "npm:~8.2.0"
+    "@vitest/coverage-v8": "npm:~0.34.2"
+    dotenv: "npm:~16.3.1"
+    env-var: "npm:~7.3.1"
+    esbuild: "npm:~0.18.20"
+    eslint: "npm:^8"
+    tsup: "npm:~7.2.0"
+    typescript: "npm:~5.1.6"
+    vite-tsconfig-paths: "npm:~4.2.0"
+  bin:
+    buildkit: ./bin/buildkit.js
+  languageName: unknown
+  linkType: soft
+
+"@repo/cache@npm:*, @repo/cache@workspace:packages/cache":
+  version: 0.0.0-use.local
+  resolution: "@repo/cache@workspace:packages/cache"
+  dependencies:
+    "@redis/client": "npm:~1.5.9"
+    "@repo/buildkit": "npm:*"
+    "@repo/testkit": "npm:*"
+    "@repo/ts": "npm:*"
+    "@repo/utils": "npm:*"
+    eslint: "npm:^8"
+  languageName: unknown
+  linkType: soft
+
+"@repo/datakit@npm:*, @repo/datakit@workspace:packages/datakit":
+  version: 0.0.0-use.local
+  resolution: "@repo/datakit@workspace:packages/datakit"
+  dependencies:
+    "@repo/buildkit": "npm:*"
+    "@repo/logger": "npm:*"
+    "@types/pg": "npm:~8.10.2"
+    "@types/uuid": "npm:~9.0.2"
+    db-errors: "npm:~0.2.3"
+    eslint: "npm:^8"
+    knex: "npm:~2.5.1"
+    objection: "npm:~3.1.1"
+    pg: "npm:~8.11.3"
+    tsup: "npm:^8.4.0"
+    uuid: "npm:~9.0.0"
+  peerDependencies:
+    "@repo/logger": "*"
+    knex: ">=2.5.1"
+    objection: ">=3.1.1"
+    pg: ">=8.11.3"
+  bin:
+    buildkit: ./bin/buildkit.js
+  languageName: unknown
+  linkType: soft
+
+"@repo/emailkit@npm:*, @repo/emailkit@workspace:packages/emailkit":
+  version: 0.0.0-use.local
+  resolution: "@repo/emailkit@workspace:packages/emailkit"
+  dependencies:
+    "@react-email/components": "npm:0.0.15"
+    "@react-email/render": "npm:0.0.12"
+    "@repo/buildkit": "npm:*"
+    "@repo/testkit": "npm:*"
+    "@sendgrid/mail": "npm:~7.7.0"
+    "@types/html-to-text": "npm:^8.1.1"
+    "@types/nodemailer": "npm:~6.4.7"
+    "@types/react": "npm:~18.2.21"
+    "@types/react-dom": "npm:~18.2.7"
+    "@vanilla-extract/css": "npm:~1.11.0"
+    eslint: "npm:^8"
+    html-to-text: "npm:^8.2.1"
+    juice: "npm:~9.0.0"
+    nodemailer: "npm:~6.9.1"
+    react: "npm:18.2.0"
+    react-dom: "npm:18.2.0"
+    twilio: "npm:~4.10.0"
+  languageName: unknown
+  linkType: soft
+
+"@repo/errors@npm:*, @repo/errors@workspace:packages/errors":
+  version: 0.0.0-use.local
+  resolution: "@repo/errors@workspace:packages/errors"
+  dependencies:
+    "@repo/buildkit": "npm:*"
+    "@repo/ts": "npm:*"
+    eslint: "npm:^8"
+    tsup: "npm:^8.4.0"
+  languageName: unknown
+  linkType: soft
+
+"@repo/eslint-plugin@workspace:packages/lint":
+  version: 0.0.0-use.local
+  resolution: "@repo/eslint-plugin@workspace:packages/lint"
+  dependencies:
+    eslint: "npm:^8"
+    eslint-config-airbnb-typescript: "npm:~18.0.0"
+    eslint-config-next: "npm:~14.2.5"
+    eslint-config-prettier: "npm:~9.1.0"
+    eslint-config-turbo: "npm:~2.0.6"
+    eslint-config-universe: "npm:~13.0.0"
+    eslint-import-resolver-typescript: "npm:~3.6.1"
+    eslint-plugin-import: "npm:~2.29.1"
+    eslint-plugin-jsdoc: "npm:~48.8.3"
+    eslint-plugin-jsx-a11y: "npm:~6.9.0"
+    eslint-plugin-prettier: "npm:~5.2.1"
+    eslint-plugin-react: "npm:~7.34.3"
+    next: "npm:^15"
+  languageName: unknown
+  linkType: soft
+
+"@repo/infrakit@npm:*, @repo/infrakit@workspace:packages/infrakit":
+  version: 0.0.0-use.local
+  resolution: "@repo/infrakit@workspace:packages/infrakit"
+  dependencies:
+    "@repo/buildkit": "npm:*"
+    "@repo/ts": "npm:*"
+    eslint: "npm:^8"
+    tsup: "npm:^8.4.0"
+  peerDependencies:
+    aws-cdk-lib: ">=2.95.1"
+    constructs: ">=10.2.69"
+    sst: ">=2.26.9"
+  languageName: unknown
+  linkType: soft
+
+"@repo/logger@npm:*, @repo/logger@workspace:packages/logger":
+  version: 0.0.0-use.local
+  resolution: "@repo/logger@workspace:packages/logger"
+  dependencies:
+    "@repo/buildkit": "npm:*"
+    "@repo/ts": "npm:*"
+    eslint: "npm:^8"
+    pino: "npm:~8.11.0"
+    pino-pretty: "npm:~9.4.0"
+    tsup: "npm:^8.4.0"
+  languageName: unknown
+  linkType: soft
+
+"@repo/search@workspace:packages/search":
+  version: 0.0.0-use.local
+  resolution: "@repo/search@workspace:packages/search"
+  dependencies:
+    "@repo/buildkit": "npm:*"
+    "@repo/testkit": "npm:*"
+    "@repo/utils": "npm:*"
+    algoliasearch: "npm:~4.19.1"
+    env-var: "npm:~7.3.1"
+    eslint: "npm:^8"
+    fuse.js: "npm:~6.6.2"
+    meilisearch: "npm:~0.34.1"
+    next: "npm:13.4.9"
+  languageName: unknown
+  linkType: soft
+
+"@repo/serverkit@npm:*, @repo/serverkit@workspace:packages/serverkit":
+  version: 0.0.0-use.local
+  resolution: "@repo/serverkit@workspace:packages/serverkit"
+  dependencies:
+    "@repo/buildkit": "npm:*"
+    "@repo/errors": "npm:*"
+    "@repo/logger": "npm:*"
+    "@repo/testkit": "npm:*"
+    "@repo/ts": "npm:*"
+    "@types/dotenv": "npm:~8.2.0"
+    dotenv: "npm:~16.3.1"
+    env-var: "npm:~7.3.1"
+    eslint: "npm:^8"
+    pino: "npm:~8.11.0"
+    pino-pretty: "npm:~9.4.0"
+    zod: "npm:~3.22.4"
+  languageName: unknown
+  linkType: soft
+
+"@repo/serverlesskit@npm:*, @repo/serverlesskit@workspace:packages/serverlesskit":
+  version: 0.0.0-use.local
+  resolution: "@repo/serverlesskit@workspace:packages/serverlesskit"
+  dependencies:
+    "@middy/core": "npm:~4.4.3"
+    "@middy/http-cors": "npm:~4.4.3"
+    "@middy/http-error-handler": "npm:~4.4.3"
+    "@middy/http-json-body-parser": "npm:~4.4.3"
+    "@repo/buildkit": "npm:*"
+    "@repo/cache": "npm:*"
+    "@repo/errors": "npm:*"
+    "@repo/testkit": "npm:*"
+    "@repo/ts": "npm:*"
+    "@types/aws-lambda": "npm:~8.10.124"
+    aws-lambda: "npm:~1.0.7"
+    eslint: "npm:^8"
+    zod: "npm:~3.22.4"
+  languageName: unknown
+  linkType: soft
+
+"@repo/storage@npm:*, @repo/storage@workspace:packages/storage":
+  version: 0.0.0-use.local
+  resolution: "@repo/storage@workspace:packages/storage"
+  dependencies:
+    "@aws-sdk/client-s3": "npm:~3.414.0"
+    "@aws-sdk/s3-presigned-post": "npm:~3.414.0"
+    "@aws-sdk/s3-request-presigner": "npm:~3.414.0"
+    "@repo/buildkit": "npm:*"
+    "@repo/testkit": "npm:*"
+    "@repo/ts": "npm:*"
+    "@repo/utils": "npm:*"
+    eslint: "npm:^8"
+  languageName: unknown
+  linkType: soft
+
+"@repo/testkit@npm:*, @repo/testkit@workspace:packages/testkit":
+  version: 0.0.0-use.local
+  resolution: "@repo/testkit@workspace:packages/testkit"
+  dependencies:
+    "@faker-js/faker": "npm:~8.0.2"
+    "@repo/buildkit": "npm:*"
+    "@repo/ts": "npm:*"
+    "@repo/utils": "npm:*"
+    "@vitest/coverage-v8": "npm:~0.34.3"
+    eslint: "npm:^8"
+    knex: "npm:~2.5.1"
+    pg: "npm:~8.11.3"
+    vite-tsconfig-paths: "npm:~4.2.0"
+    vitest: "npm:~0.34.3"
+  peerDependencies:
+    knex: ">=2.5.1"
+    pg: ">=8.11.3"
+  languageName: unknown
+  linkType: soft
+
+"@repo/ts@npm:*, @repo/ts@workspace:packages/ts":
+  version: 0.0.0-use.local
+  resolution: "@repo/ts@workspace:packages/ts"
+  dependencies:
+    vitest: "npm:~0.34.3"
+  languageName: unknown
+  linkType: soft
+
+"@repo/utils@npm:*, @repo/utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@repo/utils@workspace:packages/utils"
+  dependencies:
+    "@repo/buildkit": "npm:*"
+    "@types/lodash.groupby": "npm:~4.6.7"
+    "@types/lodash.startcase": "npm:~4.4.7"
+    csvtojson: "npm:^2.0.10"
+    date-fns: "npm:~2.30.0"
+    eslint: "npm:^8"
+    lodash.groupby: "npm:~4.6.0"
+    lodash.startcase: "npm:~4.4.0"
+    tsup: "npm:^8.4.0"
+  languageName: unknown
+  linkType: soft
 
 "@rollup/rollup-android-arm-eabi@npm:4.40.2":
   version: 4.40.2
@@ -8840,24 +8840,25 @@ __metadata:
     "@apollo/client": "npm:~3.8.1"
     "@apollo/server": "npm:~4.9.1"
     "@middy/core": "npm:~4.4.3"
-    "@num/buildkit": "npm:*"
-    "@num/cache": "npm:*"
-    "@num/datakit": "npm:*"
-    "@num/emailkit": "npm:*"
-    "@num/serverkit": "npm:*"
-    "@num/serverlesskit": "npm:*"
-    "@num/storage": "npm:*"
-    "@num/testkit": "npm:*"
-    "@num/ts": "npm:*"
-    "@num/utils": "npm:*"
     "@pothos/core": "npm:~3.33.0"
     "@pothos/plugin-with-input": "npm:~3.10.1"
+    "@repo/buildkit": "npm:*"
+    "@repo/cache": "npm:*"
+    "@repo/datakit": "npm:*"
+    "@repo/emailkit": "npm:*"
+    "@repo/serverkit": "npm:*"
+    "@repo/serverlesskit": "npm:*"
+    "@repo/storage": "npm:*"
+    "@repo/testkit": "npm:*"
+    "@repo/ts": "npm:*"
+    "@repo/utils": "npm:*"
     "@swc-node/register": "npm:~1.6.7"
     "@swc/core": "npm:~1.3.78"
     "@types/cors": "npm:~2.8.13"
     "@types/lodash": "npm:4.14.197"
     "@types/mime-types": "npm:~2.1.1"
     "@types/swagger-ui-express": "npm:~4.1.3"
+    "@vitest/coverage-v8": "npm:~0.34.3"
     argon2: "npm:~0.31.0"
     body-parser: "npm:~1.20.2"
     cors: "npm:~2.8.5"
@@ -8882,6 +8883,8 @@ __metadata:
     supertest-graphql: "npm:~1.1.4"
     swagger-ui-express: "npm:~5.0.0"
     tsconfig-paths: "npm:~4.2.0"
+    tsup: "npm:~7.2.0"
+    vitest: "npm:~0.34.3"
     xlsx: "npm:~0.18.5"
     zod: "npm:~3.22.4"
   languageName: unknown
@@ -16846,7 +16849,7 @@ __metadata:
     "@aws-sdk/client-secrets-manager": "npm:~3.409.0"
     "@aws-sdk/client-ssm": "npm:~3.409.0"
     "@aws-sdk/credential-providers": "npm:~3.409.0"
-    "@num/infrakit": "npm:*"
+    "@repo/infrakit": "npm:*"
     "@trivago/prettier-plugin-sort-imports": "npm:~4.2.0"
     "@tsconfig/node18": "npm:^18.2.1"
     "@turbo/gen": "npm:~1.9.7"

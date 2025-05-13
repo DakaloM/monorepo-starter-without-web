@@ -1,7 +1,6 @@
-import { Cache as BaseCache, TimeToLive } from '@num/cache';
-import { BaseModel } from '@num/datakit';
-import { PromiseOfOptional } from '@num/utils';
-
+import { Cache as BaseCache, TimeToLive } from '@repo/cache';
+import { BaseModel } from '@repo/datakit';
+import { PromiseOfOptional } from '@repo/utils';
 import { Context } from '~/context';
 
 export class Cache extends BaseModel {

@@ -1,5 +1,5 @@
 {
-  "name": "@num/eslint-plugin",
+  "name": "@repo/eslint-plugin",
   "version": "0.0.0",
   "main": "index.cjs",
   "license": "MIT",

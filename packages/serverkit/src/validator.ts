@@ -1,5 +1,4 @@
-import { BadRequestError, BadRequestErrorIssue, ValidationErrorCodes } from '@num/errors';
-
+import { BadRequestError, BadRequestErrorIssue, ValidationErrorCodes } from '@repo/errors';
 import { z } from 'zod';
 import { CustomIssue, refineMobileNumber } from '~/refinements';
 

@@ -1,6 +1,5 @@
-import { createBuilder } from '@num/datakit';
-import { faker } from '@num/testkit';
-
+import { createBuilder } from '@repo/datakit';
+import { faker } from '@repo/testkit';
 import { Context } from '~/context';
 import { TypeIdentifier } from '~/type';
 

@@ -7,11 +7,11 @@ services:
     ports:
       - '5437:5432'
     environment:
-      - POSTGRES_USER=num
-      - POSTGRES_PASSWORD=num
-      - POSTGRES_DB=num_dev
+      - POSTGRES_USER=repo
+      - POSTGRES_PASSWORD=repo
+      - POSTGRES_DB=repo_dev
     healthcheck:
-      test: ['CMD-SHELL', 'pg_isready -U num -d num_dev']
+      test: ['CMD-SHELL', 'pg_isready -U repo -d repo_dev']
       interval: 5s
       timeout: 3s
       retries: 10
@@ -26,17 +26,17 @@ services:
     restart: unless-stopped
     image: minio/minio
     entrypoint: sh
-    command: -c 'mkdir -p /data/num && /usr/bin/docker-entrypoint.sh server --console-address ":9001" /data'
+    command: -c 'mkdir -p /data/repo && /usr/bin/docker-entrypoint.sh server --console-address ":9001" /data'
     # network_mode: 'host'
     volumes:
       - 'minio-data:/data'
     environment:
-      - MINIO_ROOT_USER=numstorage
-      - MINIO_ROOT_PASSWORD=numstorage
+      - MINIO_ROOT_USER=repostorage
+      - MINIO_ROOT_PASSWORD=repostorage
       - MINIO_NOTIFY_WEBHOOK_ENABLE_API_FILESYSTEM_S3=on
       - MINIO_NOTIFY_WEBHOOK_ENDPOINT_API_FILESYSTEM_S3=http://localhost:8080/minio/webhooks/events
-      - MINIO_ACCESS_KEY=numstorage
-      - MINIO_SECRET_KEY=numstorage
+      - MINIO_ACCESS_KEY=repostorage
+      - MINIO_SECRET_KEY=repostorage
     ports:
       - '9000:9000'
       - '9001:9001'

@@ -1,1 +1,1 @@
-export { baseConfig as default } from '@num/testkit';
+export { baseConfig as default } from '@repo/testkit';

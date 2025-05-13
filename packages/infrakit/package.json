@@ -1,5 +1,5 @@
 {
-  "name": "@num/infrakit",
+  "name": "@repo/infrakit",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -19,8 +19,8 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "@num/buildkit": "*",
-    "@num/ts": "*",
+    "@repo/buildkit": "*",
+    "@repo/ts": "*",
     "eslint": "^8"
   },
   "peerDependencies": {

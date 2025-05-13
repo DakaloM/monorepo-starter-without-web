@@ -1,5 +1,4 @@
-import { InternalError } from '@num/serverkit';
-
+import { InternalError } from '@repo/serverkit';
 import { NextFunction, Request, RequestHandler, Response } from 'express';
 import { AuthContext } from '~/auth';
 

@@ -1,7 +1,6 @@
-import { BaseModelInstance } from '@num/datakit';
-
 import { builder } from '~/graphql/builder';
 
+import { BaseModelInstance } from '@repo/datakit';
 import { getAttachmentsByRef } from '~/documents/queries';
 
 import { AttachmentSchema } from './attachment';

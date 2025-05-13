@@ -1,4 +1,4 @@
-import { baseConfig, mergeConfig } from '@num/testkit';
+import { baseConfig, mergeConfig } from '@repo/testkit';
 
 export default mergeConfig(baseConfig, {
   test: {

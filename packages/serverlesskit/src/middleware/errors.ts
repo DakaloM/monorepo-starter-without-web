@@ -1,6 +1,5 @@
-import { BaseError, isUserError, ValidationErrorCodes } from '@num/errors';
-
 import { MiddlewareObj } from '@middy/core';
+import { BaseError, isUserError, ValidationErrorCodes } from '@repo/errors';
 
 import { StatusCode } from './core';
 

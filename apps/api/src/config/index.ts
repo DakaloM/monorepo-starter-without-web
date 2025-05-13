@@ -1,4 +1,4 @@
-import { initConfig, env } from '@num/serverkit';
+import { initConfig, env } from '@repo/serverkit';
 
 const cwd = process.cwd();
 const conf = initConfig(cwd);

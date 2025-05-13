@@ -1,5 +1,4 @@
-import { ValidationErrorCodes } from '@num/errors';
-
+import { ValidationErrorCodes } from '@repo/errors';
 import { z } from 'zod';
 
 function isMobileNumber(value: string): boolean {

@@ -1,6 +1,5 @@
-import { CacheProvider } from '@num/cache/server';
-
 import middy, { MiddlewareObj } from '@middy/core';
+import { CacheProvider } from '@repo/cache/server';
 
 import { APIGatewayEventV2, Handler } from './core';
 

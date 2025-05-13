@@ -1,6 +1,5 @@
-import { createBuilder } from '@num/datakit';
-import { faker } from '@num/testkit';
-
+import { createBuilder } from '@repo/datakit';
+import { faker } from '@repo/testkit';
 import * as argon from 'argon2';
 import { Gender, IdentityType, Race, Title, User, UserRole, UserStatus } from '~/account/user';
 

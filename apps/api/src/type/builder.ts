@@ -1,6 +1,5 @@
-import { createSeed } from '@num/datakit';
-import { createObjectMap } from '@num/utils';
-
+import { createSeed } from '@repo/datakit';
+import { createObjectMap } from '@repo/utils';
 import { Type } from '~/type/type';
 
 import { types } from './seeds';

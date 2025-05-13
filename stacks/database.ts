@@ -1,5 +1,4 @@
-import { getSecret } from '@num/infrakit';
-
+import { getSecret } from '@repo/infrakit';
 import { Duration, RemovalPolicy, SecretValue } from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as rds from 'aws-cdk-lib/aws-rds';

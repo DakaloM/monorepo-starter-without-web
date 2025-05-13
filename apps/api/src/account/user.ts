@@ -1,5 +1,4 @@
-import { BaseModel } from '@num/datakit';
-
+import { BaseModel } from '@repo/datakit';
 import Objection from 'objection';
 import { Context } from '~/context';
 

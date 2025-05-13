@@ -19,7 +19,7 @@ module.exports = {
               '!~/*/*',
               '!@apollo/**',
               '!graphql-shield/**',
-              '!@num/**',
+              '!@repo/**',
               '!@hookform/**',
             ],
             message: 'reaching to internals of a module is not allowed',

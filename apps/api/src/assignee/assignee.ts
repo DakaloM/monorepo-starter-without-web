@@ -1,6 +1,5 @@
-import { BaseModel } from '@num/datakit';
-import { ObjectMap } from '@num/utils';
-
+import { BaseModel } from '@repo/datakit';
+import { ObjectMap } from '@repo/utils';
 import { User } from '~/account';
 import { Type, TypeIdentifier } from '~/type';
 

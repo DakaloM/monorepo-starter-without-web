@@ -1,5 +1,4 @@
-import { NotFoundError } from '@num/serverkit';
-
+import { NotFoundError } from '@repo/serverkit';
 import { camelCase } from 'lodash';
 import { Context } from '~/context';
 import { Type, TypeIdentifier } from '~/type';

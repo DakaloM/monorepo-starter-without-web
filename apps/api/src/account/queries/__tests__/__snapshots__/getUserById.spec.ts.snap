@@ -1,3 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`account/queries/getUserById > should throw error when user does not exist 1`] = `[Error: User not found]`;

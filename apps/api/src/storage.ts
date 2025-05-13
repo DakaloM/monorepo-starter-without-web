@@ -1,4 +1,4 @@
-import { AmazonStorageClient } from '@num/storage';
+import { AmazonStorageClient } from '@repo/storage';
 
 import { config } from './config';
 

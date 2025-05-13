@@ -1,5 +1,4 @@
-import { InternalError } from '@num/serverkit';
-
+import { InternalError } from '@repo/serverkit';
 import { RoleIdentifier } from '~/assignee/role';
 import { Context } from '~/context';
 import { applyPagination } from '~/domain/search';

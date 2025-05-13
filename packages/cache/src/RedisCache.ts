@@ -1,5 +1,3 @@
-import { PromiseOfOptional } from '@num/utils';
-
 import {
   RedisClientType,
   createClient,
@@ -7,6 +5,7 @@ import {
   RedisFunctions,
   RedisScripts,
 } from '@redis/client';
+import { PromiseOfOptional } from '@repo/utils';
 import { Cache, TimeToLive } from '~/interface';
 
 export class RedisCache implements Cache {

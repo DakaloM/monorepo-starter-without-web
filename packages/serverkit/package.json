@@ -1,5 +1,5 @@
 {
-  "name": "@num/serverkit",
+  "name": "@repo/serverkit",
   "version": "0.0.0",
   "private": true,
   "main": "dist/index.js",
@@ -13,15 +13,15 @@
     "//test": "vitest"
   },
   "devDependencies": {
-    "@num/buildkit": "*",
-    "@num/errors": "*",
-    "@num/testkit": "*",
-    "@num/ts": "*",
+    "@repo/buildkit": "*",
+    "@repo/errors": "*",
+    "@repo/testkit": "*",
+    "@repo/ts": "*",
     "@types/dotenv": "~8.2.0",
     "eslint": "^8"
   },
   "dependencies": {
-    "@num/logger": "*",
+    "@repo/logger": "*",
     "dotenv": "~16.3.1",
     "env-var": "~7.3.1",
     "pino": "~8.11.0",

@@ -1,6 +1,5 @@
-import { createDatabase, dropDatabase, createDatabaseClient } from '@num/datakit';
-import { createLogger } from '@num/serverkit';
-
+import { createDatabase, dropDatabase, createDatabaseClient } from '@repo/datakit';
+import { createLogger } from '@repo/serverkit';
 import { resolve } from 'path';
 import { config } from '~/config';
 import { knexfile } from '~/knex';
