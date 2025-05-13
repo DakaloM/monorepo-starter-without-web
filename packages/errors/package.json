@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "@num/buildkit": "*",
-    "@num/ts": "*"
+    "@num/ts": "*",
+    "eslint": "^8"
   },
   "dependencies": {
     "tsup": "^8.4.0"

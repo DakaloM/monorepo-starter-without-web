@@ -1,4 +1,3 @@
-
 import { getConfidentialAssignees } from '~/assignee/query';
 import { Context } from '~/context';
 import { EventAction } from '~/event';

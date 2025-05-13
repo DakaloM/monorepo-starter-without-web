@@ -28,7 +28,8 @@
     "@num/buildkit": "*",
     "@num/testkit": "*",
     "@num/ts": "*",
-    "@num/utils": "*"
+    "@num/utils": "*",
+    "eslint": "^8"
   },
   "dependencies": {
     "@redis/client": "~1.5.9"

@@ -22,7 +22,8 @@
     "@num/buildkit": "*",
     "@num/testkit": "*",
     "@num/ts": "*",
-    "@num/utils": "*"
+    "@num/utils": "*",
+    "eslint": "^8"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "~3.414.0",

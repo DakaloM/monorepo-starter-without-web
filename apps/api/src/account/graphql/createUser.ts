@@ -1,8 +1,9 @@
 import { builder } from '~/graphql/builder';
 
+import { or } from 'graphql-shield';
 import { createUser } from '~/account/mutations';
 
-import { isAdmin, isSuperAdmin, isSystemAdministrator } from '../shield';
+import { isAdmin } from '../shield';
 import {
   GenderSchema,
   IdentityTypeSchema,
@@ -11,8 +12,6 @@ import {
   UserRoleSchema,
   UserSchema,
 } from './user';
-import { or } from 'graphql-shield';
-;
 
 const CreateUserInputSchema = builder.inputType('CreateUserInput', {
   fields: (t) => ({
@@ -32,7 +31,7 @@ const CreateUserInputSchema = builder.inputType('CreateUserInput', {
 
 builder.mutationField('createUser', (t) =>
   t.field({
-    shield: or(isSystemAdministrator, isSuperAdmin),
+    shield: isAdmin,
     description: 'Creates a user',
     args: {
       input: t.arg({ type: CreateUserInputSchema, required: true }),

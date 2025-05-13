@@ -1,6 +1,6 @@
 import { builder } from '~/graphql/builder';
 
-import {  UserSchema } from '~/account/graphql';
+import { UserSchema } from '~/account/graphql';
 import { isActiveUser } from '~/account/shield';
 import { Assignee } from '~/assignee';
 import { getAssigneesByRef } from '~/assignee/queries';
@@ -35,7 +35,6 @@ export const AssigneeType = builder.objectType(Assignee, {
       type: UserSchema,
       nullable: true,
     }),
-    
   }),
 });
 

@@ -28,7 +28,6 @@ describe('account/queries/getUserById', () => {
   });
 
   it('should return a user', async () => {
-    
     const user = await factory.insert('user');
 
     const result = await getUserById(user.id, ctx);

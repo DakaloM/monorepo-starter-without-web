@@ -3,7 +3,6 @@ import { BaseModel } from '@num/datakit';
 import Objection from 'objection';
 import { Context } from '~/context';
 
-
 export enum Gender {
   Male = 'Male',
   Female = 'Female',

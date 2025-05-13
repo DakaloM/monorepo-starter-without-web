@@ -31,6 +31,7 @@
     "@num/logger": "*",
     "@types/pg": "~8.10.2",
     "@types/uuid": "~9.0.2",
+    "eslint": "^8",
     "knex": "~2.5.1",
     "objection": "~3.1.1",
     "pg": "~8.11.3"

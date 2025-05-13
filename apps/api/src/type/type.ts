@@ -20,8 +20,7 @@ export enum TypeIdentifier {
   Plaintiff = 'Plaintiff',
   Defendant = 'Defendant',
   Tenant = 'Tenant',
-  Update = 'Update'
-
+  Update = 'Update',
 }
 
 export class Type extends BaseModel {

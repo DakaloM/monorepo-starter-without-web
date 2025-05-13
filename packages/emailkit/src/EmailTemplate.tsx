@@ -88,7 +88,8 @@ function EmailTemplate({ title, subTitle, recipientName, paragraphs }: Props) {
             </Section>
             <Section className="my-[32px] bg-primary pb-[32px]">
               <Heading className="text-white text-[24px] leading-none font-extrabold text-center p-0 mx-0">
-                {title}{subTitle ? ':' : ''}
+                {title}
+                {subTitle ? ':' : ''}
               </Heading>
               <Heading className="text-white text-[20px] leading-none font-normal text-center p-0 mx-0">
                 {subTitle}
@@ -101,7 +102,11 @@ function EmailTemplate({ title, subTitle, recipientName, paragraphs }: Props) {
                 </Text>
               )}
               {paragraphs.map((text, i) => (
-                <Text dangerouslySetInnerHTML={{__html: text}} key={i} className="text-black text-center text-[12px] leading-normal" />
+                <Text
+                  dangerouslySetInnerHTML={{ __html: text }}
+                  key={i}
+                  className="text-black text-center text-[12px] leading-normal"
+                />
               ))}
               <Text className="text-black text-center text-[12px] leading-normal">
                 Best Regards <br /> NUM Team

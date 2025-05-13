@@ -20,7 +20,8 @@
   },
   "devDependencies": {
     "@num/buildkit": "*",
-    "@num/ts": "*"
+    "@num/ts": "*",
+    "eslint": "^8"
   },
   "peerDependencies": {
     "aws-cdk-lib": ">=2.95.1",

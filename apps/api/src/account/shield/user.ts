@@ -1,7 +1,6 @@
-
-
 import { rule } from 'graphql-shield';
 import { Context } from '~/context';
+
 import { UserRole } from '../user';
 
 export const isActiveUser = rule({ cache: 'contextual' })(async (parent, args, ctx: Context) => {
@@ -14,10 +13,5 @@ const createUserRoleRule = (roles: UserRole[]) => {
   });
 };
 
-
-
-
 export const isUser = createUserRoleRule([UserRole.Admin, UserRole.SuperAdmin]);
 export const isAdmin = createUserRoleRule([UserRole.Admin, UserRole.SuperAdmin]);
-
-

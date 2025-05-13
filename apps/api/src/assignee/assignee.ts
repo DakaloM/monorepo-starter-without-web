@@ -20,8 +20,6 @@ export class Assignee extends BaseModel {
 
   refType: Type;
 
-
-
   static get relationMappings() {
     return {
       role: {
@@ -48,7 +46,6 @@ export class Assignee extends BaseModel {
           to: 'assignee.refTypeId',
         },
       },
-     
     };
   }
 }

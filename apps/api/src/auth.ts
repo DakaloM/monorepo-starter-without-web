@@ -1,5 +1,3 @@
-
-
 import { verify } from 'argon2';
 import { User } from '~/account';
 import { UserRole, UserStatus } from '~/account/user';
@@ -68,7 +66,7 @@ export class AuthContext {
   }
 
   public hasUserRole(role: UserRole): boolean {
-    return  this.user?.role  === role;
+    return this.user?.role === role;
   }
 
   public hasOneOfRole(roles: UserRole[]): boolean {

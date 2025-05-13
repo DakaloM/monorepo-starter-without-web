@@ -21,7 +21,8 @@
     "@num/buildkit": "*",
     "@num/testkit": "*",
     "@num/ts": "*",
-    "@types/aws-lambda": "~8.10.124"
+    "@types/aws-lambda": "~8.10.124",
+    "eslint": "^8"
   },
   "dependencies": {
     "@middy/core": "~4.4.3",

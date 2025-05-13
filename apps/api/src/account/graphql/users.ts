@@ -6,7 +6,6 @@ import { getUsers } from '../queries';
 import { isActiveUser } from '../shield';
 import { UserRoleSchema, UserSchema } from './user';
 
-
 export const UsersFilter = builder.inputType('UserFilter', {
   fields: (f) => ({
     role: f.field({ type: UserRoleSchema, required: false }),
